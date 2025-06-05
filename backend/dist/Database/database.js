@@ -17,7 +17,7 @@ const mongoose_1 = __importDefault(require("mongoose"));
 function MongoConnect() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            yield mongoose_1.default.connect('mongodb+srv://priyanshu:DMj3sDvUc5wccRSE@cluster0.qlswmff.mongodb.net/Brainly');
+            yield mongoose_1.default.connect('MONGODB_URL');
             console.log('Database connected');
         }
         catch (error) {
