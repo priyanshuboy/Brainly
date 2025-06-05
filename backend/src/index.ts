@@ -15,13 +15,13 @@ const app = express();
 app.use(express.json());
 app.use('/api/v1/user', UserRouter);
 
-// ✅ Start the server with confirmation
+
 const PORT = 3000;
 
 app.listen(PORT, (err?: any) => {
   if (err) {
-    console.error(`❌ Server failed to start on port ${PORT}`, err);
+    console.error(` Server failed to start on port ${PORT}`, err);
   } else {
-    console.log(`✅ Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}`);
   }
 });
