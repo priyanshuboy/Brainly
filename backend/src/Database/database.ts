@@ -4,7 +4,7 @@ import mongoose from 'mongoose'
 
 async function MongoConnect(){
     try{
-           await mongoose.connect('mongodb+srv://priyanshu:DMj3sDvUc5wccRSE@cluster0.qlswmff.mongodb.net/Brainly')
+           await mongoose.connect('MONGODB_URL')
            console.log('Database connected')
  
     }catch(error){

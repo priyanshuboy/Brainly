@@ -20,7 +20,7 @@ export function Card(props : CardProps){
             </div>
           
             <div className="pt-4">
-           {props.type==='youtube' && 
+            {props.type==='youtube' && 
             <iframe className="w-full" width="560" height="315" 
             src={props.link.replace("watch" ,"embed").replace('?v=' ,'/')} 
             title="YouTube video player" frameBorder="0" 
